@@ -56,7 +56,7 @@ L'**Application de Budget Personnel** est une application mobile intuitive qui a
 ### ⚡ Étapes d'Installation
 1. **Cloner le dépôt** :
    ```bash
-   git clone [https://github.com/votre-utilisateur/votre-projet.git](https://github.com/oussamazaoui/PROJET_ApplicationdeBudgetPersonnel_G1.git)
+   git clone https://github.com/oussamazaoui/PROJET_ApplicationdeBudgetPersonnel_G1.git
    ```
 2. **Ouvrir le projet dans Android Studio** :
    - Lancez Android Studio.
