@@ -1,0 +1,24 @@
+<!-- res/drawable/button_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Couleur lorsque le bouton est pressé -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#616161" /> <!-- Gris foncé lorsqu'appuyé -->
+            <corners android:radius="8dp" /> <!-- Coins arrondis -->
+        </shape>
+    </item>
+    <!-- Couleur lorsque le bouton est focusé -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#616161" /> <!-- Gris foncé lorsqu'appuyé -->
+            <corners android:radius="8dp" /> <!-- Coins arrondis -->
+        </shape>
+    </item>
+    <!-- Couleur par défaut -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#000000" /> <!-- Noir par défaut -->
+            <corners android:radius="8dp" /> <!-- Coins arrondis -->
+        </shape>
+    </item>
+</selector>

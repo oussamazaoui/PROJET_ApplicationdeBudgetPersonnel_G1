@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Champ Montant -->
+        <EditText
+            android:id="@+id/et_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Entrer le montant"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- RadioGroup pour Type -->
+        <RadioGroup
+            android:id="@+id/rg_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rb_budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Revenu" />
+
+            <RadioButton
+                android:id="@+id/rb_expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dépense" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sélectionner une catégorie"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Nouveau champ Date -->
+        <EditText
+            android:id="@+id/et_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+        android:layout_marginBottom="16dp" />
+
+        <!-- Nouveau champ Note -->
+        <EditText
+            android:id="@+id/et_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ajouter une note"
+            android:layout_marginBottom="16dp" />
+
+        <!-- CheckBox pour Activer l'Alarme -->
+        <CheckBox
+            android:id="@+id/cb_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activer l'alarme"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Groupe pour les champs d'alarme -->
+        <LinearLayout
+            android:id="@+id/alarm_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp">
+
+            <!-- Champ Date de l'Alarme (Optionnel) -->
+            <EditText
+                android:id="@+id/et_alarm_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date de l'alarme"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Champ Heure de l'Alarme (Optionnel) -->
+            <EditText
+                android:id="@+id/et_alarm_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Heure de l'alarme" />
+        </LinearLayout>
+
+        <!-- Bouton Sauvegarder -->
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sauvegarder"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

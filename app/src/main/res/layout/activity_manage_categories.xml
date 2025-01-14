@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Champ pour entrer le nom de la catégorie -->
+    <EditText
+        android:id="@+id/et_category_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez le nom de la catégorie"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Bouton pour ajouter une catégorie -->
+    <Button
+        android:id="@+id/btn_add_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter une catégorie"
+        android:layout_marginBottom="16dp" />
+
+    <!-- RecyclerView pour afficher les catégories -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

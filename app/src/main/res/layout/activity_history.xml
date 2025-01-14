@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historique des Transactions"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Filtres -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Spinner
+            android:id="@+id/spinner_type_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:prompt="@string/select_type"/>
+
+        <Spinner
+            android:id="@+id/spinner_category_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:prompt="@string/select_category"/>
+    </LinearLayout>
+
+    <!-- Filtre par date -->
+    <Button
+        android:id="@+id/btn_date_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtrer par date"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Réinitialiser les filtres -->
+    <Button
+        android:id="@+id/btn_reset_filters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Réinitialiser les filtres"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- RecyclerView pour afficher les transactions -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"/>
+</LinearLayout>

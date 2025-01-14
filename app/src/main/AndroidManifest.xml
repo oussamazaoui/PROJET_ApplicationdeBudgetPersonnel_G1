@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        Permissions requises par l'application :
+        - SET_ALARM : Permet de définir des alarmes.
+        - WAKE_LOCK : Permet de maintenir l'écran ou le processeur actif.
+        - FOREGROUND_SERVICE : Permet d'exécuter des services en premier plan.
+        - SCHEDULE_EXACT_ALARM : Permet de planifier des alarmes exactes.
+    -->
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <!--
+        Définition de l'application :
+        - allowBackup : Autorise la sauvegarde des données de l'application.
+        - dataExtractionRules : Règles pour l'extraction des données.
+        - fullBackupContent : Règles pour la sauvegarde complète.
+        - icon : Icône de l'application.
+        - label : Nom de l'application.
+        - roundIcon : Icône ronde de l'application.
+        - supportsRtl : Support pour les langues de droite à gauche (RTL).
+        - theme : Thème de l'application.
+        - targetApi : Version cible de l'API Android.
+    -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppBudget"
+        tools:targetApi="31">
+
+        <!--
+            MainActivity : Activité principale de l'application.
+            C'est le point d'entrée de l'application (écran de lancement).
+            - exported : Autorise d'autres applications à lancer cette activité.
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+            TransactionActivity : Activité pour gérer les transactions.
+            - exported : Autorise d'autres applications à lancer cette activité.
+        -->
+        <activity
+            android:name=".TransactionActivity"
+            android:exported="true">
+        </activity>
+
+        <!--
+            ManageCategoriesActivity : Activité pour gérer les catégories.
+            - exported : Autorise d'autres applications à lancer cette activité.
+        -->
+        <activity
+            android:name=".ManageCategoriesActivity"
+            android:exported="true">
+        </activity>
+
+        <!--
+            GraphActivity : Activité pour afficher des graphiques.
+            - exported : Autorise d'autres applications à lancer cette activité.
+        -->
+        <activity
+            android:name=".GraphActivity"
+            android:exported="true">
+        </activity>
+
+        <!--
+            HistoryActivity : Activité pour afficher l'historique des transactions.
+            - exported : Autorise d'autres applications à lancer cette activité.
+        -->
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="true">
+        </activity>
+
+        <!--
+            AlarmReceiver : Récepteur pour gérer les alarmes.
+            Ce composant est utilisé pour déclencher des actions en réponse à des alarmes.
+        -->
+        <receiver android:name=".Receiver.AlarmReceiver" />
+
+    </application>
+</manifest>

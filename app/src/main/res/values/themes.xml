@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Thème de base -->
+    <style name="Base.Theme.AppBudget" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Couleur principale (utilisée pour les boutons par défaut) -->
+        <item name="colorPrimary">@color/button_background_default</item>
+        <!-- Couleur du texte sur la couleur principale -->
+        <item name="colorOnPrimary">@color/button_text_color</item>
+        <!-- Couleur secondaire (utilisée pour les boutons alternatifs) -->
+        <item name="colorSecondary">@color/button_background_default</item>
+        <!-- Couleur du texte sur la couleur secondaire -->
+        <item name="colorOnSecondary">@color/button_text_color</item>
+        <!-- Style personnalisé pour les boutons -->
+        <item name="materialButtonStyle">@style/MyButtonStyle</item>
+    </style>
+
+    <!-- Thème principal -->
+    <style name="Theme.AppBudget" parent="Base.Theme.AppBudget" />
+</resources>

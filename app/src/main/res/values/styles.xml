@@ -1,0 +1,10 @@
+<resources>
+    <!-- Style personnalisé pour les boutons -->
+    <style name="MyButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/button_background</item> <!-- Utilise le drawable personnalisé -->
+        <item name="android:textColor">#FFFFFF</item> <!-- Texte blanc -->
+        <item name="android:textSize">16sp</item> <!-- Taille du texte -->
+        <item name="android:padding">8dp</item> <!-- Padding interne -->
+        <item name="cornerRadius">8dp</item> <!-- Coins arrondis -->
+    </style>
+</resources>

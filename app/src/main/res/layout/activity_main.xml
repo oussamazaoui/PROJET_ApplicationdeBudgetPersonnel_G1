@@ -1,0 +1,145 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FAFAFA"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            android:outlineProvider="bounds">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vue d'ensemble"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dépenses :"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_expenses"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0.0"
+                    android:gravity="end"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Revenu :"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_budget"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0.0"
+                    android:gravity="end"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Balance : 0.0"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/button_add_transaction"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Ajouter"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_view_graph"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Graphiques"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_view_history"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Historique"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button_manage_categories"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Gérer les catégories"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
