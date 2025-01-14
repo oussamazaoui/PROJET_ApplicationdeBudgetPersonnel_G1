@@ -1,94 +1,136 @@
 # PROJET_ApplicationdeBudgetPersonnel_G1
-Application de Budget Personnel
-Description
-L'Application de Budget Personnel est une application mobile conçue pour aider les utilisateurs à gérer leurs finances de manière simple et efficace. Elle permet de suivre les dépenses et les revenus, de catégoriser les transactions, de visualiser les données via des graphiques interactifs, et de programmer des alarmes pour les transactions récurrentes. L'application est développée pour Android et utilise des technologies modernes pour offrir une expérience utilisateur fluide et intuitive.
 
-Fonctionnalités
-Suivi des Dépenses et Revenus :
-Enregistrez facilement vos transactions quotidiennes et catégorisez-les (nourriture, transport, loisirs, etc.).
+# 📈 Application de Budget Personnel
 
-Graphiques et Statistiques :
-Visualisez vos finances grâce à des graphiques clairs et interactifs pour mieux comprendre vos habitudes de dépenses.
+## 🔎 Description
+L'**Application de Budget Personnel** est une application mobile intuitive qui aide les utilisateurs à gérer leurs finances. Suivez vos dépenses et revenus, visualisez vos données via des graphiques interactifs et planifiez des alarmes pour les transactions récurrentes.
 
-Rappels et Alertes :
-Programmez des alarmes pour les transactions récurrentes (ex : loyer, abonnements) avec une date et une heure spécifiques.
+---
 
-Historique des Transactions :
-Consultez l'historique de toutes vos transactions avec des filtres pour afficher les données par catégorie, date ou type (dépense/revenu).
+## 🔧 Fonctionnalités Principales
 
-Technologies Utilisées
-Android Studio : Environnement de développement pour créer l'interface utilisateur et la logique métier de l'application.
+### 💸 Suivi des Dépenses et Revenus
+- Enregistrez vos transactions quotidiennes.
+- Catégorisez vos dépenses (ex : ☕ Nourriture, 🚍 Transport, 🎮 Loisirs).
 
-SQLite : Base de données locale pour stocker les transactions, les catégories et les budgets.
+### 🔔 Ajout de Transactions avec Alarme
+- Ajoutez une transaction avec :
+  - 💵 Montant
+  - 🌐 Catégorie
+  - 🕒 Date
+  - 📝 Note optionnelle
+- Programmez des rappels pour les transactions récurrentes (⏰ ex : loyer, abonnements).
 
-MPAndroidChart : Bibliothèque pour créer des graphiques interactifs et visuellement attrayants.
+### 📊 Graphiques et Statistiques
+- Visualisez vos finances avec des graphiques interactifs.
+- Analysez vos habitudes de dépense (🌱 camemberts, 🏋️ barres).
 
-Java : Langage de programmation principal utilisé pour le développement de l'application.
+### 📂 Historique des Transactions
+- Consultez toutes vos transactions passées.
+- Filtrez par :
+  - 🔗 Catégorie
+  - 🗓 Date (mois/année en cours)
+  - 📉 Type (dépense/revenu)
 
-AlarmManager : Pour gérer les rappels et les alarmes des transactions récurrentes.
+### 🔄 Gestion des Catégories
+- Ajoutez, modifiez ou supprimez des catégories personnalisées.
 
-Installation
-Prérequis
-Android Studio (version récente recommandée).
+---
 
-Un appareil Android ou un émulateur pour tester l'application.
+## 🛠️ Technologies Utilisées
+- **Android Studio** : Conception de l'interface utilisateur et de la logique métier.
+- **SQLite** : Base de données locale pour stocker les transactions.
+- **MPAndroidChart** : Création de graphiques interactifs.
+- **Java** : Langage principal de développement.
+- **AlarmManager** : Gestion des rappels et alarmes.
 
-SDK Android configuré avec une API level 21 (Android 5.0) ou supérieure.
+---
 
-Étapes d'Installation
-Cloner le dépôt :
+## 🔗 Installation
 
-bash
-Copy
-git clone https://github.com/votre-utilisateur/votre-projet.git
-Ouvrir le projet dans Android Studio :
+### 📚 Prérequis
+- **Android Studio** (version récente recommandée).
+- Un appareil Android ou un émulateur.
+- SDK Android configuré avec une API level 21 (Android 5.0) ou supérieure.
 
-Lancez Android Studio.
+### ⚡ Étapes d'Installation
+1. **Cloner le dépôt** :
+   ```bash
+   git clone [https://github.com/votre-utilisateur/votre-projet.git](https://github.com/oussamazaoui/PROJET_ApplicationdeBudgetPersonnel_G1.git)
+   ```
+2. **Ouvrir le projet dans Android Studio** :
+   - Lancez Android Studio.
+   - Sélectionnez **Open an existing project** et choisissez le dossier du projet.
+3. **Configurer un émulateur ou appareil physique** :
+   - Via AVD Manager ou connectez un appareil en mode développeur.
+4. **Compiler et lancer l'application** :
+   - Cliquez sur **Run** (⇧ + F10).
 
-Sélectionnez "Open an existing project" et choisissez le dossier du projet.
+---
 
-Configurer l'émulateur ou connecter un appareil :
+## 🔄 Utilisation
 
-Configurez un émulateur Android via AVD Manager ou connectez un appareil physique en mode développeur.
+### 🔔 Ajouter une Transaction
+1. Accédez à l'onglet **Ajouter une Transaction**.
+2. Remplissez les champs :
+   - 💰 Montant
+   - 🌐 Catégorie
+   - 🕒 Date
+   - 📝 Note optionnelle
+3. Activez l'option **Alarme** pour programmer un rappel.
+4. Cliquez sur **Sauvegarder**.
 
-Compiler et exécuter l'application :
+### 📊 Consulter les Graphiques
+1. Accédez à l'onglet **Graphiques**.
+2. Visualisez la répartition de vos finances (📏 camemberts, 🏋️ barres).
 
-Cliquez sur "Run" (ou Shift + F10) pour compiler et lancer l'application.
+### 📂 Historique des Transactions
+1. Accédez à l'onglet **Historique**.
+2. Filtrez les transactions par :
+   - 🔗 Catégorie
+   - 🕒 Date
+   - 💵 Type
+3. Consultez les détails de chaque transaction.
 
-Utilisation
-Ajouter une Transaction
-Ouvrez l'application et accédez à l'onglet "Ajouter une Transaction".
+---
 
-Remplissez les champs :
+## 🎥 Aperçu
+- Regardez la démonstration de l'application ici :
 
-Montant
 
-Catégorie (ex : Nourriture, Transport, Loisirs)
 
-Date
+---
 
-Note (optionnelle)
+## 📚 Contribuer
+1. Forkez le répértoire.
+2. Créez une branche :
+   ```bash
+   git checkout -b feature/nom-fonctionnalite
+   ```
+3. Faites vos modifications et ajoutez-les :
+   ```bash
+   git add .
+   git commit -m "Ajout d'une nouvelle fonctionnalité"
+   ```
+4. Poussez vos modifications :
+   ```bash
+   git push origin feature/nom-fonctionnalite
+   ```
+5. Créez une Pull Request.
 
-Activer une alarme :
+---
 
-Activez l'option "Alarme" pour programmer un rappel à une date et une heure spécifiques.
+## 🌐 Liens Utiles
+- [Documentation Officielle Android](https://developer.android.com/)
+- [Bibliothèque MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)
 
-Cliquez sur "Sauvegarder" pour enregistrer la transaction.
+---
 
-Consulter les Graphiques
-Accédez à l'onglet "Graphiques".
+## 🚀 Avenir
+- Ajout d'une fonctionnalité d'exportation des données (📄 CSV, PDF).
+- Intégration de synchronisation cloud (☁️ Google Drive, Dropbox).
+- Notifications push pour les rappels de transactions.
 
-Visualisez la répartition de vos dépenses et revenus sous forme de camembert ou de barres.
 
-Historique des Transactions
-Accédez à l'onglet "Historique".
 
-Utilisez les filtres pour afficher les transactions par :
 
-Catégorie (ex : Nourriture, Transport)
-
-Date (ex : Mois en cours, Année en cours)
-
-Type (Dépense ou Revenu)
-
-Consultez les détails de chaque transaction (montant, catégorie, date, note).
